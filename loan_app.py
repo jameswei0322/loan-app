@@ -29,7 +29,8 @@ annuity_total, monthly_payment = annuity_loan(principal, annual_rate, years)
 # 投資報酬分析
 bullet_profit = developer_return - bullet_total
 annuity_profit = developer_return - annuity_total
-
+monthly_principal = principal / (years * 12)
+monthly_interest = monthly_payment - monthly_principal
 
 # 顯示
 st.title("土地貸款試算工具")
@@ -42,6 +43,7 @@ st.write(f"預估淨利潤：{bullet_profit:.2f} 萬元")
 
 st.subheader("等額本息｜每月固定還款")
 st.write(f"每月應繳：{monthly_payment:.2f} 萬元")
+st.write(f"其中每月利息：約 {monthly_interest:.2f} 萬元")
 st.write(f"總還款金額：{annuity_total:.2f} 萬元")
 st.write(f"預估淨利潤：{annuity_profit:.2f} 萬元")
 
