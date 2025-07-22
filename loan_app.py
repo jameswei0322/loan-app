@@ -19,7 +19,7 @@ price_per_ping = st.sidebar.number_input("每坪價格（萬元）", value=60.0)
 area = st.sidebar.number_input("購買坪數", value=13)
 years = st.sidebar.slider("貸款年數", 1, 30, 6)
 annual_rate = st.sidebar.number_input("年利率（%）", value=3.0) / 100
-developer_return = st.sidebar.number_input("建商回收金額（萬元）", value=2134.0)
+developer_return = st.sidebar.number_input("建商賣出金額（萬元）", value=2134.0)
 
 # 計算
 principal = price_per_ping * area
