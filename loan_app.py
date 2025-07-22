@@ -29,7 +29,7 @@ annuity_total, monthly_payment = annuity_loan(principal, annual_rate, years)
 # 投資報酬分析
 bullet_profit = developer_return - bullet_total
 annuity_profit = developer_return - annuity_total
-annuity_break_even_months = principal / monthly_payment
+
 
 # 顯示
 st.title("土地貸款試算工具")
@@ -44,5 +44,5 @@ st.subheader("等額本息｜每月固定還款")
 st.write(f"每月應繳：{monthly_payment:.2f} 萬元")
 st.write(f"總還款金額：{annuity_total:.2f} 萬元")
 st.write(f"預估淨利潤：{annuity_profit:.2f} 萬元")
-st.write(f"回本時間：約 {annuity_break_even_months:.1f} 月（{annuity_break_even_months/12:.2f} 年）")
+
 
