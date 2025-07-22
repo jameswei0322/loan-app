@@ -25,6 +25,8 @@ developer_return = st.sidebar.number_input("建商賣出金額（萬元）", val
 principal = price_per_ping * area
 bullet_total = bullet_loan(principal, annual_rate, years)
 annuity_total, monthly_payment = annuity_loan(principal, annual_rate, years)
+bullet_monthly_payment = bullet_total / (years * 12)
+bullet_monthly_interest = (bullet_total - principal) / (years * 12)
 
 # 投資報酬分析
 bullet_profit = developer_return - bullet_total
@@ -38,7 +40,7 @@ st.markdown(f"###  本金總額：{principal:.2f} 萬元")
 
 st.subheader(" 複利｜期末一次還本息")
 st.write(f"6 年後總還款：{bullet_total:.2f} 萬元")
-st.write(f"平均月攤（僅供參考）：{bullet_total / (years * 12):.2f} 萬元")
+st.write(f"平均月攤（僅供參考）：{bullet_monthly_payment:.2f} 萬元（其中利息約 {bullet_monthly_interest:.2f} 萬元）")
 st.write(f"預估淨利潤：{bullet_profit:.2f} 萬元")
 
 st.subheader("等額本息｜每月固定還款")
