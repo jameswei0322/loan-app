@@ -42,8 +42,7 @@ st.write(f"平均月攤（僅供參考）：{bullet_total / (years * 12):.2f} �
 st.write(f"預估淨利潤：{bullet_profit:.2f} 萬元")
 
 st.subheader("等額本息｜每月固定還款")
-st.write(f"每月應繳：{monthly_payment:.2f} 萬元")
-st.write(f"其中每月利息：約 {monthly_interest:.2f} 萬元")
+st.write(f"每月應繳：{monthly_payment:.2f} 萬元（其中利息約 {monthly_interest:.2f} 萬元）")
 st.write(f"總還款金額：{annuity_total:.2f} 萬元")
 st.write(f"預估淨利潤：{annuity_profit:.2f} 萬元")
 
