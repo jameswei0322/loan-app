@@ -33,7 +33,7 @@ annuity_break_even_months = principal / monthly_payment
 
 # 顯示
 st.title("土地貸款試算工具")
-st.markdown(f"### 🧾 本金總額：{principal:.2f} 萬元")
+st.markdown(f"###  本金總額：{principal:.2f} 萬元")
 
 st.subheader(" 複利｜期末一次還本息")
 st.write(f"6 年後總還款：{bullet_total:.2f} 萬元")
