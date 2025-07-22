@@ -37,7 +37,7 @@ st.markdown(f"###  本金總額：{principal:.2f} 萬元")
 
 st.subheader(" 複利｜期末一次還本息")
 st.write(f"6 年後總還款：{bullet_total:.2f} 萬元")
-st.write(f"平均月負擔（僅供參考）：{bullet_total / (years * 12):.2f} 萬元")
+st.write(f"平均月攤（僅供參考）：{bullet_total / (years * 12):.2f} 萬元")
 st.write(f"預估淨利潤：{bullet_profit:.2f} 萬元")
 
 st.subheader("等額本息｜每月固定還款")
